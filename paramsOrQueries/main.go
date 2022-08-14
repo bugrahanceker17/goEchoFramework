@@ -7,7 +7,7 @@ import (
 )
 
 func mainHandler(c echo.Context) error {
-	return c.String(http.StatusOK, "Main endpoint'i get isteği yapıldı.")
+	return c.String(http.StatusOK, "Main endpoint has get request")
 }
 
 func userHandler(c echo.Context) error {
@@ -33,8 +33,8 @@ func userHandler(c echo.Context) error {
 	//fmt.Println(name)
 	//fmt.Println(surname)
 
-	//return c.String(http.StatusOK, "User endpoint'i get isteği yapıldı.")
-	return c.String(http.StatusBadRequest, "Yalnızca string veya JSON formatı kabul edilir.")
+	//return c.String(http.StatusOK, "User endpoint has get request")
+	return c.String(http.StatusBadRequest, "Only string or JSON format is accepted")
 }
 
 func main() {

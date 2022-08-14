@@ -25,7 +25,7 @@ func addUser(c echo.Context) error {
 
 	json.Unmarshal(req, &user)
 
-	return c.String(http.StatusCreated, fmt.Sprintf("Eklendi => %s", user.Username))
+	return c.String(http.StatusCreated, fmt.Sprintf("Added => %s", user.Username))
 }
 
 func main() {

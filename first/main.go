@@ -7,7 +7,7 @@ import (
 )
 
 func mainHandler(c echo.Context) error {
-	return c.String(http.StatusOK, "Main endpoint'i get isteği yapıldı.")
+	return c.String(http.StatusOK, "Main endpoint has get request")
 }
 
 func main() {
