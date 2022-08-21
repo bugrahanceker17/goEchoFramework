@@ -30,7 +30,7 @@ func main() {
 	e.Start(":8080")
 }
 
-// help endpoint'i "/admin/help" şeklinde kullanılabilir. Çünkü group'da tanımlanmıştır.
+// help endpoint'i "/admin/main" şeklinde kullanılabilir. Çünkü group'da tanımlanmıştır.
 // help endpoint'i aslında alt endpoint'tir.
 // g.Use() sadece group endpoint'leri için middleware tanımlar
 // e.User() ise bütün endpointler için tanımlar
